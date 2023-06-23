@@ -4,10 +4,10 @@
     "slug": "family-planner-webview",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/icon-p.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/icon-p.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -15,16 +15,23 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.dimatytenko.familyplannerwebview"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/adaptive-icon-p.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.dimatytenko.familyplannerwebview"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon-p.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "22cc2c16-042b-446f-bf9c-a0c795c0366d"
+      }
     }
   }
 }
