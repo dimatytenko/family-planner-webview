@@ -4,7 +4,9 @@ import { WebView } from "react-native-webview";
 export default function App() {
   return (
     <View style={styles.container}>
-      <WebView source={{ uri: "https://family-planner-x.netlify.app" }} />
+      <View style={styles.ios}>
+        <WebView source={{ uri: "https://family-planner-x.netlify.app" }} />
+      </View>
     </View>
   );
 }
@@ -12,5 +14,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+  },
+  ios: {
+    flex: 1,
+    paddingTop: 40,
   },
 });
